@@ -1,0 +1,68 @@
+@import 'base';
+
+.header{
+    background-color: #564f4f;
+
+    .top-menu{
+        justify-content: space-between;
+        align-items: center;
+        height: 140px;
+        margin: 0 167px 0 170px;
+    }
+    .logo-pic{
+        margin-right: 12px;
+    }
+    .logo-span{
+        margin-top: 4px;
+        color: #82b541;
+        font-family: "Roboto Slab";
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 3.39px;
+    }
+
+    .menu{
+        width: 580px;
+        justify-content: space-between;
+    }
+    .nav-link{
+        color: #ffffff;
+        font-family: "Roboto-Thin";
+        font-size: 15px;;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .nav-link:hover{
+        color: $main-green;
+    }
+    .timer{
+        height: 200px;
+        width: 972px;
+        margin:118px auto;
+        border-radius: 20px;
+        border: 2px solid $main-green;
+        justify-content: center;
+        align-items: center;
+        font-family: "RobotoSlab-Thin";
+        font-size: 130px;
+        text-transform: uppercase;
+        color: #ffffff;    
+        
+    }
+    .timer__l-grid{
+        align-items: center;
+    }
+    .timer__span{
+        color: #ffffff;
+        font-family: "RobotoSlab";
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom: 26px;
+        
+    }
+    .timer__colon{
+        align-self: baseline;
+        line-height: 132px;
+    }
+    
+}
