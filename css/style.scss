@@ -64,5 +64,14 @@
         align-self: baseline;
         line-height: 132px;
     }
-    
+     
+}
+.ending-header{
+    position: relative;
+    width: 100vw;
+    background-image: linear-gradient(-6deg, white 0%, white 49%, #564f4f 50%, #564f4f 50%);
+
+    .ending-header_icon1{
+        position: absolute;
+    }
 }
