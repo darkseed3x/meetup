@@ -52,6 +52,7 @@ $placeholder-text-color: #bebebe;
 }
 
 body{
+	box-sizing: border-box;
 	margin: 0;
 	font-family: 'Roboto';
 	color: $text-primary-color;
