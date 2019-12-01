@@ -47,6 +47,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url("../fonts/Roboto-Black.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto';
@@ -99,7 +106,7 @@ body {
   font-family: "Roboto Slab";
   font-size: 18px;
   text-transform: uppercase;
-  letter-spacing: 3.39px;
+  letter-spacing: 4.39px;
 }
 
 .header .menu {
@@ -122,9 +129,9 @@ body {
 }
 
 .header .timer {
-  height: 200px;
+  height: 196px;
   width: 972px;
-  margin: 118px auto;
+  margin: 80px auto 40px auto;
   border-radius: 20px;
   border: 2px solid #90d23d;
   -webkit-box-pack: center;
@@ -150,7 +157,8 @@ body {
   font-family: "RobotoSlab";
   font-size: 25px;
   text-transform: uppercase;
-  margin-bottom: 26px;
+  margin-bottom: 46px;
+  line-height: 10px;
 }
 
 .header .timer__colon {
@@ -159,26 +167,86 @@ body {
   line-height: 132px;
 }
 
-.ending-header {
+.skew-section {
   background: #564f4f;
-  color: #fff;
   position: relative;
-  z-index: 1;
+  z-index: -4;
+  height: 330px;
 }
 
-.ending-header:after {
-  background: inherit;
-  bottom: 0;
+.skew-section::after {
+  background: #fff;
+  bottom: -2px;
   content: '';
   display: block;
-  height: 100%;
+  height: 53%;
   left: 0;
   position: absolute;
   right: 0;
-  -webkit-transform: skewY(-4deg);
-          transform: skewY(-4deg);
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
   -webkit-transform-origin: 100%;
           transform-origin: 100%;
-  z-index: -1;
+  z-index: -5;
+}
+
+.skew-section__icon1 {
+  position: absolute;
+  top: 136px;
+  left: 382px;
+  z-index: -6;
+}
+
+.skew-section__icon2 {
+  position: absolute;
+  top: 128px;
+  left: 514px;
+  z-index: -7;
+}
+
+.skew-section__icon3 {
+  position: absolute;
+  top: 112px;
+  left: 636px;
+  z-index: -8;
+}
+
+.skew-section__icon4 {
+  position: absolute;
+  top: 100px;
+  left: 772px;
+  z-index: -9;
+}
+
+.skew-section__icon5 {
+  position: absolute;
+  top: 92px;
+  left: 904px;
+  z-index: -10;
+}
+
+.main {
+  margin-top: 18px;
+}
+
+.main .main__blog-container {
+  margin-left: 170px;
+  width: 528px;
+  color: #242424;
+}
+
+.main .main__title {
+  margin: 0;
+  font-size: 50px;
+  font-family: "Roboto-Black";
+}
+
+.main .main__text {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+}
+
+.main .main__text span {
+  font-family: "Roboto-Medium";
 }
 /*# sourceMappingURL=style.css.map */

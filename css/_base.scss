@@ -44,6 +44,12 @@ $placeholder-text-color: #bebebe;
 	font-weight: 100;
 	font-style: normal;
 }
+@font-face{
+    font-family: 'Roboto-Black';
+	src:url('../fonts/Roboto-Black.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
 
 body{
 	margin: 0;
