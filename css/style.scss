@@ -190,6 +190,49 @@
         margin: 0 0 21px 0;
         font-family: 'Roboto-Light';
     }
+    
+    .main-blogs{
+        margin-top: 140px;
+        justify-content: space-between;
+        padding: 0 172px 0 175px;
+        box-sizing: border-box;
+        color: $text-primary-color;
+    }
+    .main-blogs__blog{
+        align-items: center;
+
+    }
+    .main-blogs__title{
+        font-family: "Roboto-Black";
+        font-size: 35px;
+        margin-top: 20px;
+        margin-bottom: 4px;
+    }
+    .main-blogs__text{
+        font-family: "Roboto-Light";
+        font-size: 14px;
+        width: 290px;
+        text-align: center;
+    }
+    .main-blogs__img{
+        width: 198px;
+        height: 211px;
+    } 
 }
-   
+.time-table{
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    
+
+    .table{
+        height: 375px;
+        width: 1030px;
+        border-radius: 15px;
+    }
+    .table_cell{
+        height: 75px;
+        border-bottom: 1px solid  #373737;
+    }
+}
   
