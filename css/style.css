@@ -93,6 +93,10 @@ body {
   background-color: #564f4f;
 }
 
+.header .logo {
+  text-decoration: none;
+}
+
 .header .top-menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
