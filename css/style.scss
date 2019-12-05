@@ -2,7 +2,7 @@
 
 .header{
     background-color: #564f4f;
-    
+
     .logo{
         text-decoration: none;
     }
@@ -176,6 +176,7 @@
         font-size: 22px;
         color: white;
         margin-top: 18px;
+        border: none;
 
         &:hover{
             cursor: pointer;
@@ -282,13 +283,13 @@
 }
 .skew-rewards{
     margin-top: 160px;
-    background: #564f4f;
+    background: #4b4d4f;
     position: relative;
     z-index: -4;
-    height: 700px;
+    min-height: 700px;
+
     .container{
-        justify-content: center;
-        align-items: end;
+        align-items: flex-start;
     }
 
     &::before {
@@ -318,14 +319,32 @@
         z-index: -5;
       }
       .elite{
-            position: absolute;
-            top: -78px;
-            left: 270px;
+        margin: -72px 0 0 150px;
       }
       .reward-block{
+            margin-left: 32px;
+            text-align: right;
+            margin-top: 164px;
             width: 665px;
-            height: 258px;
+            min-height: 258px;
             color: #fff;
+    }
+    .reward-block__text{
+        font-family: 'Roboto-light';
+        font-size: 14px;
+    }
+    .reward-block__title{
+         margin-bottom: 24px;
+         font-family: "Roboto-Bold";
+    }
+    .reward-block__btn{
+        font-size: 18px;
+        background-color: $main-green;
+        border-radius: 15px;
+        padding: 15px 22px;
+        margin-top: 25px;
+        color:#fff;
+        border: none;
     }
 }
   
