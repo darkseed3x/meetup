@@ -65,6 +65,7 @@ body {
 .container {
   width: 1366px;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .flex-container {
@@ -240,23 +241,30 @@ body {
   position: relative;
 }
 
-.main .main__blog-container {
+.main__blog-container {
   margin-left: 170px;
   width: 528px;
   color: #242424;
 }
 
-.main .main__text {
+.main__text {
   font-family: "Roboto-Light";
   font-size: 14px;
 }
 
-.main .main__text span {
+.main__text span {
   font-family: "Roboto-Medium";
 }
 
+.main__l-text-and-form {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .main .form {
-  position: absolute;
+  margin-top: -274px;
+  margin-right: 166px;
   width: 430px;
   height: 530px;
   -webkit-box-shadow: 0 1px 2px rgba(35, 31, 32, 0.65);
@@ -267,8 +275,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: -274px;
-  left: 770px;
   background-color: #fff;
 }
 
