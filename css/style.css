@@ -183,62 +183,60 @@ body {
   background: #564f4f;
   position: relative;
   z-index: -4;
-  height: 330px;
+  height: 312px;
 }
 
 .skew-section::after {
-  background: #fff;
-  bottom: -2px;
+  bottom: 0px;
   content: '';
   display: block;
-  height: 53%;
   left: 0;
   position: absolute;
   right: 0;
-  -webkit-transform: skewY(-5deg);
-          transform: skewY(-5deg);
-  -webkit-transform-origin: 100%;
-          transform-origin: 100%;
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  background-color: white;
   z-index: -5;
+  height: 8.625vw;
 }
 
 .skew-section__icon1 {
   position: absolute;
-  top: 136px;
-  left: 382px;
+  top: 138px;
+  left: 222px;
   z-index: -6;
 }
 
 .skew-section__icon2 {
   position: absolute;
   top: 128px;
-  left: 514px;
+  left: 356px;
   z-index: -7;
 }
 
 .skew-section__icon3 {
   position: absolute;
-  top: 112px;
-  left: 636px;
+  top: 114px;
+  left: 478px;
   z-index: -8;
 }
 
 .skew-section__icon4 {
   position: absolute;
-  top: 100px;
-  left: 772px;
+  top: 102px;
+  left: 613px;
   z-index: -9;
 }
 
 .skew-section__icon5 {
   position: absolute;
   top: 92px;
-  left: 904px;
+  left: 746px;
   z-index: -10;
 }
 
 .main {
-  margin-top: 18px;
+  margin-top: 38px;
   position: relative;
 }
 
@@ -437,11 +435,11 @@ body {
 }
 
 .skew-rewards {
-  margin-top: 160px;
+  margin-top: 286px;
   background: #4b4d4f;
   position: relative;
   z-index: -4;
-  min-height: 700px;
+  min-height: 580px;
 }
 
 .skew-rewards .container {
@@ -451,45 +449,41 @@ body {
 }
 
 .skew-rewards::before {
-  background: #fff;
-  bottom: 700px;
   content: '';
   display: block;
-  height: 20%;
   left: 0;
   position: absolute;
   right: 0;
-  -webkit-transform: skewY(-5deg);
-          transform: skewY(-5deg);
-  -webkit-transform-origin: 100%;
-          transform-origin: 100%;
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  background-color: #4b4d4f;
   z-index: -5;
+  height: 8.625vw;
+  bottom: 100%;
 }
 
 .skew-rewards::after {
-  background: #fff;
   bottom: 0px;
   content: '';
   display: block;
-  height: 20%;
   left: 0;
   position: absolute;
   right: 0;
-  -webkit-transform: skewY(-5deg);
-          transform: skewY(-5deg);
-  -webkit-transform-origin: 100%;
-          transform-origin: 100%;
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  background-color: white;
   z-index: -5;
+  height: 8.625vw;
 }
 
 .skew-rewards .elite {
-  margin: -72px 0 0 150px;
+  margin: -205px 0 0 164px;
 }
 
 .skew-rewards .reward-block {
-  margin-left: 32px;
+  margin-left: 20px;
   text-align: right;
-  margin-top: 164px;
+  margin-top: 36px;
   width: 665px;
   min-height: 258px;
   color: #fff;
