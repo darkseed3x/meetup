@@ -10,7 +10,6 @@
         justify-content: space-between;
         align-items: center;
         height: 140px;
-        margin: 0 167px 0 170px;
     }
     .logo-pic{
         margin-right: 12px;
@@ -25,10 +24,10 @@
     }
 
     .menu{
-        width: 580px;
         justify-content: space-between;
     }
     .nav-link{
+        padding-left: 40px;
         color: #ffffff;
         font-family: "Roboto-Thin";
         font-size: 15px;;
@@ -40,7 +39,7 @@
     }
     .timer{
         height: 196px;
-        width: 972px;
+        padding: 0 80px;
         margin:80px auto 40px auto;
         border-radius: 20px;
         border: 2px solid $main-green;
@@ -125,8 +124,8 @@
     position: relative;
 
     &__blog-container{
-        margin-left: 170px;
-        width: 528px;
+        margin-right: 72px;
+        
         color: $text-primary-color;
     }
 
@@ -143,13 +142,15 @@
     }
     .form{
         margin-top: -274px;
-        margin-right: 166px;
-        width: 430px;
+        padding: 0 46px;
         height: 530px;
         box-shadow: 0 1px 2px rgba(35, 31, 32, 0.65);
         justify-content: space-between;
         align-items: center;
         background-color:#fff;
+        width: 430px;
+        flex-shrink: 0;
+        box-sizing: border-box;
 
         input[type=text]{
             padding: 16px 14px;
@@ -194,7 +195,6 @@
     .main-blogs{
         margin-top: 140px;
         justify-content: space-between;
-        padding: 0 172px 0 175px;
         box-sizing: border-box;
         color: $text-primary-color;
     }
@@ -227,8 +227,7 @@
     
 
     .table{
-        min-height: 375px;
-        width: 1030px;
+        width: 100%;
         margin: 0 auto;
         
     }
@@ -330,6 +329,7 @@
             width: 665px;
             min-height: 258px;
             color: #fff;
+            margin-bottom: 158px;
     }
     .reward-block__text{
         font-family: 'Roboto-light';
