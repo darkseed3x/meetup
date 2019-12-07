@@ -196,6 +196,7 @@
 
 .text{
     font-family: "Roboto-Light";
+    font-size: 14px;
 
     &_font_medium{
         font-family: "Roboto-Medium";
@@ -205,9 +206,6 @@
     }
     &_size_m{
         font-size: 15px;
-    }
-    &_size_s{
-        font-size: 14px;
     }
     &_align_cntr{
         text-align: center;
@@ -287,46 +285,54 @@
 }
 /**************************************************************************************************/
     
-    .main-blogs{
+.blogs{
         margin-top: 140px;
         justify-content: space-between;
         box-sizing: border-box;
         color: $text-primary-color;
     }
-    .main-blogs__blog{
-        align-items: center;
 
-    }
-    .main-blogs__title{
-        font-family: "Roboto-Black";
-        font-size: 35px;
+
+/**************************************************************************************************/
+
+.blog{
+    align-items: center;
+
+    &__img{
+        min-height: 211px;
+    } 
+    &__subtitle{
         margin-top: 34px;
         margin-bottom: 4px;
     }
-    .main-blogs__text{
-        font-family: "Roboto-Light";
-        font-size: 14px;
-        width: 290px;
-        text-align: center;
+    &__text{
+        padding: 0 38px;
     }
-    .main-blogs__img{
-        width: 198px;
-        height: 211px;
-    } 
+} 
 
-.time-table{
+/**************************************************************************************************/
+
+.subtitle{
+    font-family: "Roboto-Black";
+    font-size: 35px;
+    
+}
+    
+/**************************************************************************************************/
+
+.table-events{
     margin-top: 66px;
     align-items: center;
     justify-content: center;
+}  
     
-    
-
-    .table{
-        width: 100%;
-        margin: 0 auto;
-        color: #fff;
+/**************************************************************************************************/
+.table{
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
         
-    }
+    
     .table__cell{
         min-height: 75px;
         justify-content: start;

@@ -50,7 +50,7 @@
 @font-face {
   font-family: 'Roboto-Black';
   src: url("../fonts/Roboto-Black.ttf") format("truetype");
-  font-weight: 100;
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -293,6 +293,7 @@ body {
 /**************************************************************************************************/
 .text {
   font-family: "Roboto-Light";
+  font-size: 14px;
 }
 
 .text_font_medium {
@@ -305,10 +306,6 @@ body {
 
 .text_size_m {
   font-size: 15px;
-}
-
-.text_size_s {
-  font-size: 14px;
 }
 
 .text_align_cntr {
@@ -392,7 +389,7 @@ body {
 }
 
 /**************************************************************************************************/
-.main-blogs {
+.blogs {
   margin-top: 140px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -402,32 +399,34 @@ body {
   color: #242424;
 }
 
-.main-blogs__blog {
+/**************************************************************************************************/
+.blog {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.main-blogs__title {
-  font-family: "Roboto-Black";
-  font-size: 35px;
+.blog__img {
+  min-height: 211px;
+}
+
+.blog__subtitle {
   margin-top: 34px;
   margin-bottom: 4px;
 }
 
-.main-blogs__text {
-  font-family: "Roboto-Light";
-  font-size: 14px;
-  width: 290px;
-  text-align: center;
+.blog__text {
+  padding: 0 38px;
 }
 
-.main-blogs__img {
-  width: 198px;
-  height: 211px;
+/**************************************************************************************************/
+.subtitle {
+  font-family: "Roboto-Black";
+  font-size: 35px;
 }
 
-.time-table {
+/**************************************************************************************************/
+.table-events {
   margin-top: 66px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -437,13 +436,13 @@ body {
           justify-content: center;
 }
 
-.time-table .table {
+/**************************************************************************************************/
+.table {
   width: 100%;
-  margin: 0 auto;
   color: #fff;
 }
 
-.time-table .table__cell {
+.table .table__cell {
   min-height: 75px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -454,32 +453,32 @@ body {
   font-size: 22px;
 }
 
-.time-table .table__cell:last-child {
+.table .table__cell:last-child {
   border-radius: 0 0 15px 15px;
 }
 
-.time-table .table__cell--title {
+.table .table__cell--title {
   border-radius: 15px 15px 0 0;
   background-color: #90d23d;
   font-size: 30px;
   font-family: "Roboto-Black";
 }
 
-.time-table .table__cell--odd {
+.table .table__cell--odd {
   background-color: #373737;
 }
 
-.time-table .table__cell--even {
+.table .table__cell--even {
   background-color: #4b4d4f;
 }
 
-.time-table .table__time {
+.table .table__time {
   padding-left: 48px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 
-.time-table .table__event {
+.table .table__event {
   padding-right: 48px;
   padding-left: 124px;
   -webkit-box-pack: justify;
@@ -490,17 +489,17 @@ body {
           flex-grow: 1;
 }
 
-.time-table .table__plus {
+.table .table__plus {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding-right: 48px;
 }
 
-.time-table .table__title-time {
+.table .table__title-time {
   padding-left: 80px;
 }
 
-.time-table .table__title-events {
+.table .table__title-events {
   padding-left: 150px;
 }
 
