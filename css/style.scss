@@ -196,10 +196,21 @@
 
 .text{
     font-family: "Roboto-Light";
-    font-size: 14px;
 
     &_font_medium{
         font-family: "Roboto-Medium";
+    }
+    &_color_6c{
+        color: #6c6c6c;
+    }
+    &_size_m{
+        font-size: 15px;
+    }
+    &_size_s{
+        font-size: 14px;
+    }
+    &_align_cntr{
+        text-align: center;
     }
 }
 
@@ -238,28 +249,11 @@
     &_bgcolor_white{
         background-color:#fff;
     }
-    &_button{
+    &__button{
         margin-top: 18px;
     }
-    &__hint{
+    &__text{
         margin-bottom: 21px;
-    }
-
-}
-/**************************************************************************************************/
-
-.hint{
-    font-family: 'Roboto-Light';
-    text-align: center;
-
-    &_color_6c{
-        color: #6c6c6c;
-    }
-    &_size_m{
-        font-size: 15px;
-    }
-    &_size_s{
-        font-size: 14px;
     }
 
 }
@@ -324,12 +318,13 @@
     margin-top: 66px;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    
     
 
     .table{
         width: 100%;
         margin: 0 auto;
+        color: #fff;
         
     }
     .table__cell{

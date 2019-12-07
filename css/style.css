@@ -293,11 +293,26 @@ body {
 /**************************************************************************************************/
 .text {
   font-family: "Roboto-Light";
-  font-size: 14px;
 }
 
 .text_font_medium {
   font-family: "Roboto-Medium";
+}
+
+.text_color_6c {
+  color: #6c6c6c;
+}
+
+.text_size_m {
+  font-size: 15px;
+}
+
+.text_size_s {
+  font-size: 14px;
+}
+
+.text_align_cntr {
+  text-align: center;
 }
 
 /**************************************************************************************************/
@@ -340,30 +355,12 @@ body {
   background-color: #fff;
 }
 
-.form_button {
+.form__button {
   margin-top: 18px;
 }
 
-.form__hint {
+.form__text {
   margin-bottom: 21px;
-}
-
-/**************************************************************************************************/
-.hint {
-  font-family: 'Roboto-Light';
-  text-align: center;
-}
-
-.hint_color_6c {
-  color: #6c6c6c;
-}
-
-.hint_size_m {
-  font-size: 15px;
-}
-
-.hint_size_s {
-  font-size: 14px;
 }
 
 /**************************************************************************************************/
@@ -438,12 +435,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #fff;
 }
 
 .time-table .table {
   width: 100%;
   margin: 0 auto;
+  color: #fff;
 }
 
 .time-table .table__cell {
