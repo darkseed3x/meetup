@@ -18,22 +18,30 @@
     text-decoration: none;
 
     &__logo-pic{
-        margin-right: 12px;
+        margin-right: 10px;
     }
     &__logo-title{
         margin-top: 4px;
-        font-family: "Roboto Slab";
-        text-transform: uppercase;
-        letter-spacing: 4.39px;
-    }
-    &__logo-title_green{
-        color: #82b541;
-    }
-    &__logo-title_size_m{
-        font-size: 18px;
+        margin-left: 4px;
     }
 }
 
+/**************************************************************************************************/
+
+.logo-title{
+    margin-bottom: 0;
+    font-family: "RobotoSlab";
+    text-transform: uppercase;
+    letter-spacing: 3.39px;
+
+    &_green{
+        color: #82b541;
+    }
+    &_size_m{
+        font-size: 18px;
+    }
+
+}
 /**************************************************************************************************/
 
 .nav{
@@ -158,74 +166,132 @@
 
 .main{
     margin-top: 38px;
-    position: relative;
+    margin-bottom: 132px;
+    justify-content: space-between;
+}
 
-    &__article{
-        margin-right: 72px;
-        
+/**************************************************************************************************/
+
+ .article{
+    margin-right: 72px;
+    
+    &_color_primary{
         color: $text-primary-color;
     }
+}
 
-    &__text{
-        font-family: "Roboto-Light";
-        font-size: 14px;
+/**************************************************************************************************/
 
-        span{
-            font-family: "Roboto-Medium";
-        }
+.title{
+	margin: 0;
+    font-size: 50px;
+    font-family: "Roboto-Black";
+
+    &_color_white{
+        color: #fff;
     }
-    &__l-text-and-form{
-        justify-content: space-between;
-    }
-    .form{
-        margin-top: -274px;
-        padding: 0 46px;
-        height: 530px;
-        box-shadow: 0 1px 2px rgba(35, 31, 32, 0.65);
-        justify-content: space-between;
-        align-items: center;
-        background-color:#fff;
-        width: 430px;
-        flex-shrink: 0;
-        box-sizing: border-box;
+}
 
-        input[type=text]{
-            padding: 16px 14px;
-            font-size: 19px;
-            width: 100%;
-            border-radius: 5px;
-            border: 1px solid $main-green;
-            font-family: 'Roboto-Light';
-        }
-    }
+/**************************************************************************************************/
 
-    .form__title{
+.text{
+    font-family: "Roboto-Light";
+    font-size: 14px;
+
+    &_font_medium{
+        font-family: "Roboto-Medium";
+    }
+}
+
+/**************************************************************************************************/
+   
+.form{
+    margin-top: -274px;
+    padding: 0 46px;
+    height: 530px;
+    box-shadow: 0 1px 2px rgba(35, 31, 32, 0.65);
+    justify-content: space-between;
+    align-items: center;
+    width: 430px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+
+    &__name,
+    &__email,
+    &__phone-number,
+    &__login{
+        padding: 16px 14px;
+        font-size: 19px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid $main-green;
+        font-family: 'Roboto-Light';
+    }
+    
+    &__title{
         font-family: 'Roboto-Bold';
         font-size: 30px;
         margin-top: 25px;
         margin-bottom: 0;
     }
-    .form_button{
-        padding: 15px 135px;
-        border-radius: 5px;
-        background-color: $main-green;
-        font-family: 'Roboto-Bold';
-        font-size: 22px;
-        color: white;
+
+    &_bgcolor_white{
+        background-color:#fff;
+    }
+    &_button{
         margin-top: 18px;
-        border: none;
-
-        &:hover{
-            cursor: pointer;
-        }
+    }
+    &__hint{
+        margin-bottom: 21px;
     }
 
-    .form__appeal{
+}
+/**************************************************************************************************/
+
+.hint{
+    font-family: 'Roboto-Light';
+    text-align: center;
+
+    &_color_6c{
         color: #6c6c6c;
-        font-size: 15px;
-        margin: 0 0 21px 0;
-        font-family: 'Roboto-Light';
     }
+    &_size_m{
+        font-size: 15px;
+    }
+    &_size_s{
+        font-size: 14px;
+    }
+
+}
+
+/**************************************************************************************************/
+
+.button{
+    border-radius: 5px;
+    font-family: 'Roboto-Bold'; 
+    border: none;
+    
+
+    &_bgcolor_green{
+        background-color: $main-green;
+    }
+    &_text_size_m{
+        font-size: 22px;
+    }
+    &_color_white{
+        color: white;
+    }
+    &_size_l{
+        height: 55px;
+        width: 367px;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+
+}
+/**************************************************************************************************/
     
     .main-blogs{
         margin-top: 140px;
@@ -253,7 +319,7 @@
         width: 198px;
         height: 211px;
     } 
-}
+
 .time-table{
     margin-top: 66px;
     align-items: center;
@@ -308,13 +374,7 @@
     .table__title-events{
         padding-left: 150px;
     }
-    .hint{
-        font-family: 'Roboto-Light';
-        font-size: 14px;
-        color: $text-primary-color;
-        margin: 38px 98px 0 98px;
-        text-align: center;
-    }
+    
 }
 .skew-rewards{
     
@@ -365,13 +425,18 @@
             min-height: 258px;
             color: #fff;
             margin-bottom: 158px;
+        
+            &__title{
+                margin-bottom: 24px;
+            }
+
     }
     .reward-block__text{
         font-family: 'Roboto-light';
         font-size: 14px;
     }
     .reward-block__title{
-         margin-bottom: 24px;
+         
          font-family: "Roboto-Bold";
     }
     .reward-block__btn{

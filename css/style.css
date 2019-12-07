@@ -84,12 +84,6 @@ body {
           flex-direction: column;
 }
 
-.h2_title {
-  margin: 0;
-  font-size: 50px;
-  font-family: "Roboto-Black";
-}
-
 .header_bg_color {
   background-color: #564f4f;
 }
@@ -111,21 +105,27 @@ body {
 }
 
 .logo__logo-pic {
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 .logo__logo-title {
   margin-top: 4px;
-  font-family: "Roboto Slab";
-  text-transform: uppercase;
-  letter-spacing: 4.39px;
+  margin-left: 4px;
 }
 
-.logo__logo-title_green {
+/**************************************************************************************************/
+.logo-title {
+  margin-bottom: 0;
+  font-family: "RobotoSlab";
+  text-transform: uppercase;
+  letter-spacing: 3.39px;
+}
+
+.logo-title_green {
   color: #82b541;
 }
 
-.logo__logo-title_size_m {
+.logo-title_size_m {
   font-size: 18px;
 }
 
@@ -264,30 +264,44 @@ body {
 /**************************************************************************************************/
 .main {
   margin-top: 38px;
-  position: relative;
-}
-
-.main__article {
-  margin-right: 72px;
-  color: #242424;
-}
-
-.main__text {
-  font-family: "Roboto-Light";
-  font-size: 14px;
-}
-
-.main__text span {
-  font-family: "Roboto-Medium";
-}
-
-.main__l-text-and-form {
+  margin-bottom: 132px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.main .form {
+/**************************************************************************************************/
+.article {
+  margin-right: 72px;
+}
+
+.article_color_primary {
+  color: #242424;
+}
+
+/**************************************************************************************************/
+.title {
+  margin: 0;
+  font-size: 50px;
+  font-family: "Roboto-Black";
+}
+
+.title_color_white {
+  color: #fff;
+}
+
+/**************************************************************************************************/
+.text {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+}
+
+.text_font_medium {
+  font-family: "Roboto-Medium";
+}
+
+/**************************************************************************************************/
+.form {
   margin-top: -274px;
   padding: 0 46px;
   height: 530px;
@@ -299,7 +313,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fff;
   width: 430px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -307,7 +320,7 @@ body {
           box-sizing: border-box;
 }
 
-.main .form input[type=text] {
+.form__name, .form__email, .form__phone-number, .form__login {
   padding: 16px 14px;
   font-size: 19px;
   width: 100%;
@@ -316,36 +329,73 @@ body {
   font-family: 'Roboto-Light';
 }
 
-.main .form__title {
+.form__title {
   font-family: 'Roboto-Bold';
   font-size: 30px;
   margin-top: 25px;
   margin-bottom: 0;
 }
 
-.main .form_button {
-  padding: 15px 135px;
-  border-radius: 5px;
-  background-color: #90d23d;
-  font-family: 'Roboto-Bold';
-  font-size: 22px;
-  color: white;
+.form_bgcolor_white {
+  background-color: #fff;
+}
+
+.form_button {
   margin-top: 18px;
+}
+
+.form__hint {
+  margin-bottom: 21px;
+}
+
+/**************************************************************************************************/
+.hint {
+  font-family: 'Roboto-Light';
+  text-align: center;
+}
+
+.hint_color_6c {
+  color: #6c6c6c;
+}
+
+.hint_size_m {
+  font-size: 15px;
+}
+
+.hint_size_s {
+  font-size: 14px;
+}
+
+/**************************************************************************************************/
+.button {
+  border-radius: 5px;
+  font-family: 'Roboto-Bold';
   border: none;
 }
 
-.main .form_button:hover {
+.button_bgcolor_green {
+  background-color: #90d23d;
+}
+
+.button_text_size_m {
+  font-size: 22px;
+}
+
+.button_color_white {
+  color: white;
+}
+
+.button_size_l {
+  height: 55px;
+  width: 367px;
+}
+
+.button:hover {
   cursor: pointer;
 }
 
-.main .form__appeal {
-  color: #6c6c6c;
-  font-size: 15px;
-  margin: 0 0 21px 0;
-  font-family: 'Roboto-Light';
-}
-
-.main .main-blogs {
+/**************************************************************************************************/
+.main-blogs {
   margin-top: 140px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -355,27 +405,27 @@ body {
   color: #242424;
 }
 
-.main .main-blogs__blog {
+.main-blogs__blog {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.main .main-blogs__title {
+.main-blogs__title {
   font-family: "Roboto-Black";
   font-size: 35px;
   margin-top: 34px;
   margin-bottom: 4px;
 }
 
-.main .main-blogs__text {
+.main-blogs__text {
   font-family: "Roboto-Light";
   font-size: 14px;
   width: 290px;
   text-align: center;
 }
 
-.main .main-blogs__img {
+.main-blogs__img {
   width: 198px;
   height: 211px;
 }
@@ -457,14 +507,6 @@ body {
   padding-left: 150px;
 }
 
-.time-table .hint {
-  font-family: 'Roboto-Light';
-  font-size: 14px;
-  color: #242424;
-  margin: 38px 98px 0 98px;
-  text-align: center;
-}
-
 .skew-rewards {
   margin-top: 286px;
   background: #4b4d4f;
@@ -521,13 +563,16 @@ body {
   margin-bottom: 158px;
 }
 
+.skew-rewards .reward-block__title {
+  margin-bottom: 24px;
+}
+
 .skew-rewards .reward-block__text {
   font-family: 'Roboto-light';
   font-size: 14px;
 }
 
 .skew-rewards .reward-block__title {
-  margin-bottom: 24px;
   font-family: "Roboto-Bold";
 }
 
