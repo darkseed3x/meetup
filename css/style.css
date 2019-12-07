@@ -196,9 +196,7 @@ body {
 }
 
 .timer__span {
-  color: #ffffff;
   font-family: "RobotoSlab";
-  text-transform: uppercase;
   margin-bottom: 46px;
   line-height: 10px;
   font-size: 25px;
