@@ -1,7 +1,23 @@
 @import 'base';
 
-.header_bg_color{
-    background-color: $header-bg-color;
+.full-width-block{
+
+    &_bg_gray{
+        background-color: $top-bg-color;
+      }
+    
+    &::after {
+        bottom: 0px;
+        content: '';
+        display: block;
+        left: 0;
+        position: absolute;
+        right: 0;
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+        background-color: white;
+        z-index: 9;
+        height: 8.625vw;
+      }
 }
 
 /**************************************************************************************************/
@@ -63,27 +79,12 @@
 /**************************************************************************************************/
 
 .timer-section{
-    position: relative;
-    z-index: -4;
-    
-    &_bg_color{
-        background-color: $header-bg-color;
-    }
+   
+
     &__timer{
         margin:80px auto 352px auto;
     }
-    &::after {
-        bottom: 0px;
-        content: '';
-        display: block;
-        left: 0;
-        position: absolute;
-        right: 0;
-        clip-path: polygon(100% 0, 0 100%, 100% 100%);
-        background-color: white;
-        z-index: -5;
-        height: 8.625vw;
-      }
+    
 }
 
 
@@ -127,39 +128,38 @@
 
 .skew-img{
     position: absolute;
-    top: 14vw;
-    left: 14vw;
-
+    left: 386px;
+    bottom: 188px;
 
     &__img1{
         position: absolute;
-        top: 138px;
-        left: 222px;
-        z-index: -6;
+        // top: 138px;
+        // left: 222px;
+        z-index: 8;
     }
     &__img2{
         position: absolute;
-        top: 128px;
-        left: 356px;
-        z-index: -7;
+        top: -11px;
+        left: 134px;
+        z-index: 7;
     }
     &__img3{
         position: absolute;
-        top: 114px;
-        left: 478px;
-        z-index: -8;
+        top: -26px;
+        left: 258px;
+        z-index: 6;
     }
     &__img4{
         position: absolute;
-        top: 102px;
-        left: 613px;
-        z-index: -9;
+        top: -36px;
+        left: 394px;
+        z-index: 5;
     }
     &__img5{
         position: absolute;
-        top: 92px;
-        left: 746px;
-        z-index: -10;
+        top: -46px;
+        left: 526px;
+        z-index: 4;
     }
 }
 /**************************************************************************************************/
@@ -215,6 +215,7 @@
 /**************************************************************************************************/
    
 .form{
+    z-index: 10;
     margin-top: -274px;
     padding: 0 46px;
     height: 530px;
@@ -314,7 +315,11 @@
 
 .subtitle{
     font-family: "Roboto-Black";
-    font-size: 35px;
+    font-size: 30px;
+
+    &_font_size_l{
+        font-size: 35px;
+    }
     
 }
     
@@ -332,14 +337,25 @@
     margin: 0 auto;
     color: #fff;
         
+/**************************************************************************************************/
     
-    .table__cell{
-        min-height: 75px;
-        justify-content: start;
-        align-items: center;
-        font-size: 22px;
-        
+.cell{
+    min-height: 75px;
+    justify-content: start;
+    align-items: center;
+    font-size: 22px;
+
+    &__subtitle{
+        padding-left: 80px;
+        padding-Right: 150px;
     }
+    &_bfcolor_odd{
+        background-color: #373737;
+    }
+    &_bfcolor_even{
+        background-color: #4b4d4f;
+    }
+}
     .table__cell:last-child{
         border-radius: 0 0 15px 15px;
     }
@@ -348,12 +364,6 @@
         background-color: $main-green;
         font-size: 30px;
         font-family: "Roboto-Black";
-    }
-    .table__cell--odd{
-        background-color: #373737;
-    }
-    .table__cell--even{
-        background-color: #4b4d4f;
     }
     .table__time{
         padding-left: 48px;
@@ -370,13 +380,15 @@
         padding-right: 48px;
     }
     .table__title-time{
-        padding-left: 80px;
+        
     }
     .table__title-events{
-        padding-left: 150px;
+        
     }
-    
 }
+    /**************************************************************************************************/
+    
+
 .skew-rewards{
     
     margin-top: 286px;
