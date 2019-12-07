@@ -220,41 +220,41 @@ body {
 }
 
 /**************************************************************************************************/
-.skew-section {
+.skew-img {
   position: absolute;
   top: 14vw;
   left: 14vw;
 }
 
-.skew-section__icon1 {
+.skew-img__img1 {
   position: absolute;
   top: 138px;
   left: 222px;
   z-index: -6;
 }
 
-.skew-section__icon2 {
+.skew-img__img2 {
   position: absolute;
   top: 128px;
   left: 356px;
   z-index: -7;
 }
 
-.skew-section__icon3 {
+.skew-img__img3 {
   position: absolute;
   top: 114px;
   left: 478px;
   z-index: -8;
 }
 
-.skew-section__icon4 {
+.skew-img__img4 {
   position: absolute;
   top: 102px;
   left: 613px;
   z-index: -9;
 }
 
-.skew-section__icon5 {
+.skew-img__img5 {
   position: absolute;
   top: 92px;
   left: 746px;
