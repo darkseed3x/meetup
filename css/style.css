@@ -90,15 +90,12 @@ body {
   font-family: "Roboto-Black";
 }
 
-.header {
+.header_bg_color {
   background-color: #564f4f;
 }
 
-.header .logo {
-  text-decoration: none;
-}
-
-.header .top-menu {
+/**************************************************************************************************/
+.top-menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -108,26 +105,38 @@ body {
   height: 140px;
 }
 
-.header .logo-pic {
+/**************************************************************************************************/
+.logo {
+  text-decoration: none;
+}
+
+.logo__logo-pic {
   margin-right: 12px;
 }
 
-.header .logo-span {
+.logo__logo-title {
   margin-top: 4px;
-  color: #82b541;
   font-family: "Roboto Slab";
-  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 4.39px;
 }
 
-.header .menu {
+.logo__logo-title_green {
+  color: #82b541;
+}
+
+.logo__logo-title_size_m {
+  font-size: 18px;
+}
+
+/**************************************************************************************************/
+.nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.header .nav-link {
+.nav__link {
   padding-left: 40px;
   color: #ffffff;
   font-family: "Roboto-Thin";
@@ -136,16 +145,24 @@ body {
   text-decoration: none;
 }
 
-.header .nav-link:hover {
+.nav__link:hover {
   color: #90d23d;
 }
 
-.header .timer {
+/**************************************************************************************************/
+.timer-section_bg_color {
+  background-color: #564f4f;
+}
+
+.timer-section__timer {
+  margin: 80px auto 40px auto;
+}
+
+/**************************************************************************************************/
+.timer {
   height: 196px;
   padding: 0 80px;
-  margin: 80px auto 40px auto;
   border-radius: 20px;
-  border: 2px solid #90d23d;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -153,32 +170,37 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: "RobotoSlab-Thin";
-  font-size: 130px;
   text-transform: uppercase;
   color: #ffffff;
+  font-size: 130px;
 }
 
-.header .timer__l-grid {
+.timer__wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.header .timer__span {
+.timer__span {
   color: #ffffff;
   font-family: "RobotoSlab";
-  font-size: 25px;
   text-transform: uppercase;
   margin-bottom: 46px;
   line-height: 10px;
+  font-size: 25px;
 }
 
-.header .timer__colon {
+.timer__colon {
   -ms-flex-item-align: baseline;
       align-self: baseline;
   line-height: 132px;
 }
 
+.timer_border_green {
+  border: 2px solid #90d23d;
+}
+
+/**************************************************************************************************/
 .skew-section {
   background: #564f4f;
   position: relative;

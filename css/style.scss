@@ -1,32 +1,45 @@
 @import 'base';
 
-.header{
-    background-color: #564f4f;
+.header_bg_color{
+    background-color: $header-bg-color;
+}
 
-    .logo{
-        text-decoration: none;
-    }
-    .top-menu{
-        justify-content: space-between;
-        align-items: center;
-        height: 140px;
-    }
-    .logo-pic{
+/**************************************************************************************************/
+
+.top-menu{
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+}
+
+/**************************************************************************************************/
+
+.logo{
+    text-decoration: none;
+
+    &__logo-pic{
         margin-right: 12px;
     }
-    .logo-span{
+    &__logo-title{
         margin-top: 4px;
-        color: #82b541;
         font-family: "Roboto Slab";
-        font-size: 18px;
         text-transform: uppercase;
         letter-spacing: 4.39px;
     }
-
-    .menu{
-        justify-content: space-between;
+    &__logo-title_green{
+        color: #82b541;
     }
-    .nav-link{
+    &__logo-title_size_m{
+        font-size: 18px;
+    }
+}
+
+/**************************************************************************************************/
+
+.nav{
+    justify-content: space-between;
+
+    &__link{
         padding-left: 40px;
         color: #ffffff;
         font-family: "Roboto-Thin";
@@ -34,41 +47,62 @@
         text-transform: uppercase;
         text-decoration: none;
     }
-    .nav-link:hover{
-        color: $main-green;
+    &__link:hover{
+            color: $main-green;
     }
-    .timer{
-        height: 196px;
-        padding: 0 80px;
+}
+
+/**************************************************************************************************/
+
+.timer-section{
+    
+    &_bg_color{
+        background-color: $header-bg-color;
+    }
+    &__timer{
         margin:80px auto 40px auto;
-        border-radius: 20px;
-        border: 2px solid $main-green;
-        justify-content: center;
-        align-items: center;
-        font-family: "RobotoSlab-Thin";
-        font-size: 130px;
-        text-transform: uppercase;
-        color: #ffffff;    
-        
     }
-    .timer__l-grid{
+}
+
+
+/**************************************************************************************************/
+
+.timer{
+    height: 196px;
+    padding: 0 80px;
+    border-radius: 20px;  
+    justify-content: center;
+    align-items: center;
+    font-family: "RobotoSlab-Thin"; 
+    text-transform: uppercase;
+    color: #ffffff; 
+    font-size: 130px;   
+    
+    &__wrapper{
         align-items: center;
     }
-    .timer__span{
+
+    &__span{
         color: #ffffff;
-        font-family: "RobotoSlab";
-        font-size: 25px;
+        font-family: "RobotoSlab";    
         text-transform: uppercase;
         margin-bottom: 46px;
         line-height: 10px;
-        
+        font-size: 25px;
     }
-    .timer__colon{
+
+    &__colon{
         align-self: baseline;
         line-height: 132px;
+    } 
+
+    &_border_green{
+        border: 2px solid $main-green;
     }
-     
+
 }
+/**************************************************************************************************/
+
 .skew-section{
     background: #564f4f;
     position: relative;
