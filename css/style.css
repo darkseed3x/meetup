@@ -150,12 +150,31 @@ body {
 }
 
 /**************************************************************************************************/
+.timer-section {
+  position: relative;
+  z-index: -4;
+}
+
 .timer-section_bg_color {
   background-color: #564f4f;
 }
 
 .timer-section__timer {
-  margin: 80px auto 40px auto;
+  margin: 80px auto 352px auto;
+}
+
+.timer-section::after {
+  bottom: 0px;
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  background-color: white;
+  z-index: -5;
+  height: 8.625vw;
 }
 
 /**************************************************************************************************/
@@ -202,24 +221,9 @@ body {
 
 /**************************************************************************************************/
 .skew-section {
-  background: #564f4f;
-  position: relative;
-  z-index: -4;
-  height: 312px;
-}
-
-.skew-section::after {
-  bottom: 0px;
-  content: '';
-  display: block;
-  left: 0;
   position: absolute;
-  right: 0;
-  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
-          clip-path: polygon(100% 0, 0 100%, 100% 100%);
-  background-color: white;
-  z-index: -5;
-  height: 8.625vw;
+  top: 14vw;
+  left: 14vw;
 }
 
 .skew-section__icon1 {
@@ -257,6 +261,7 @@ body {
   z-index: -10;
 }
 
+/**************************************************************************************************/
 .main {
   margin-top: 38px;
   position: relative;
