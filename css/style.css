@@ -121,6 +121,10 @@ body {
   font-size: 15px;
 }
 
+.text_size_l {
+  font-size: 19px;
+}
+
 .text_align_cntr {
   text-align: center;
 }
@@ -180,6 +184,10 @@ body {
 
 .full-width-block_bg_gray {
   background: #4b4d4f;
+}
+
+.full-width-block_bg_green {
+  background: #90d23d;
 }
 
 .full-width-block_skew_top::before {
@@ -613,7 +621,7 @@ body {
 
 /**************************************************************************************************/
 .sponsors {
-  margin-bottom: 120px;
+  margin-bottom: 86px;
   text-align: center;
 }
 
@@ -641,19 +649,28 @@ body {
 /**************************************************************************************************/
 .past-events {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .past-events__align_wrapper {
   text-align: left;
+  padding-right: 400px;
+  padding-left: 34px;
+  padding-bottom: 102px;
+}
+
+.past-events__title {
+  margin-bottom: 20px;
 }
 
 /**************************************************************************************************/
 .rectangles {
-  min-height: 690px;
+  min-height: 784px;
   -ms-grid-columns: (1fr)[17];
       grid-template-columns: repeat(17, 1fr);
   -ms-grid-rows: (1fr)[17];
       grid-template-rows: repeat(17, 1fr);
+  margin-bottom: 96px;
 }
 
 .rectangles__rectangle_blue {
@@ -678,5 +695,32 @@ body {
   grid-column: span 10;
   grid-row: span 9;
   background-color: #e0652a;
+}
+
+/**************************************************************************************************/
+.footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__socials {
+  padding-top: 60px;
+  padding-bottom: 34px;
+}
+
+.footer__up {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: -50px;
+}
+
+.footer__text {
+  padding: 40px 310px;
+}
+
+/**************************************************************************************************/
+.socials__facebook, .socials__twitter, .socials__linkedin, .socials__google, .socials__tumbler {
+  padding: 0 8px;
 }
 /*# sourceMappingURL=style.css.map */

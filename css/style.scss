@@ -9,6 +9,9 @@
     &_bg_gray{
         background: #4b4d4f;
     }
+    &_bg_green{
+        background:$main-green;
+    }
     &_skew_top::before {
         content: '';
         display: block;
@@ -399,7 +402,7 @@
 /**************************************************************************************************/
 
 .sponsors{
-    margin-bottom: 120px;
+    margin-bottom: 86px;
     text-align: center;
 
     &__wrapper-for-pics{
@@ -424,17 +427,25 @@
 
 .past-events{
 text-align: center;
+margin-bottom: 60px;
 
     &__align_wrapper{
-    text-align: left;
-}
+        text-align: left;
+        padding-right: 400px;
+        padding-left: 34px;
+        padding-bottom: 102px;
+    }
+    &__title{
+        margin-bottom: 20px;
+    }
     
 }
 /**************************************************************************************************/
 .rectangles{
-    min-height: 690px;
+    min-height: 784px;
     grid-template-columns: repeat(17, 1fr);
     grid-template-rows: repeat(17, 1fr);
+    margin-bottom: 96px;
 
     &__rectangle_blue{
         grid-column: span 9;
@@ -457,4 +468,32 @@ text-align: center;
         background-color: #e0652a;
     }
     
+}
+/**************************************************************************************************/
+
+.footer{
+    align-items: center;
+
+    &__socials{
+        padding-top: 60px;
+        padding-bottom: 34px;
+    }
+    &__up{
+        align-self: flex-end;
+        margin-top: -50px;
+    }
+    &__text{
+        padding: 40px 310px;
+    }
+}
+/**************************************************************************************************/
+.socials{
+
+    &__facebook,
+    &__twitter,
+    &__linkedin,
+    &__google,
+    &__tumbler{
+        padding: 0 8px;
+    }
 }
