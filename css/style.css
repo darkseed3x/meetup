@@ -84,6 +84,11 @@ body {
           flex-direction: column;
 }
 
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+}
+
 .relative {
   position: relative;
 }
@@ -118,6 +123,10 @@ body {
 
 .text_align_cntr {
   text-align: center;
+}
+
+.text_color_white {
+  color: white;
 }
 
 /**************************************************************************************************/
@@ -538,7 +547,7 @@ body {
 
 /**************************************************************************************************/
 .rewards {
-  margin-top: 286px;
+  margin-top: 300px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -546,35 +555,128 @@ body {
 
 .rewards__elite {
   z-index: 10;
-  margin: -205px 0 0 164px;
+  margin-top: -200px;
 }
 
-/**************************************************************************************************/
-.reward-block {
+.rewards__wrapper {
   margin-left: 20px;
+  margin-top: 24px;
+  margin-bottom: 200px;
   text-align: right;
-  margin-top: 36px;
   width: 665px;
   min-height: 258px;
   color: #fff;
-  margin-bottom: 158px;
 }
 
-.reward-block__title {
+.rewards__button {
+  margin-top: 32px;
+}
+
+/**************************************************************************************************/
+.spikers {
+  margin-bottom: 328px;
+  padding: 0 30px;
+}
+
+.spikers__wrapper {
+  margin-top: 60px;
+  -ms-grid-columns: (296px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 296px);
+  -ms-grid-rows: (296px)[auto-fill];
+      grid-template-rows: repeat(auto-fill, 296px);
+  grid-gap: 40px;
+}
+
+.spikers__title {
+  margin-top: 110px;
   margin-bottom: 24px;
 }
 
-.reward-block .reward-block__title {
-  font-family: "Roboto-Bold";
+.spikers__text {
+  margin-right: 384px;
 }
 
-.reward-block .reward-block__btn {
-  font-size: 18px;
-  background-color: #90d23d;
+/**************************************************************************************************/
+.square {
+  background: #90d23d;
   border-radius: 15px;
-  padding: 15px 22px;
-  margin-top: 25px;
-  color: #fff;
-  border: none;
+  min-height: 296px;
+}
+
+.square_bg_peace {
+  background: url(../sources/peace.png) center no-repeat;
+}
+
+.square_bg_curve {
+  background: url(../sources/2.png) center no-repeat;
+}
+
+/**************************************************************************************************/
+.sponsors {
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.sponsors__wrapper-for-pics {
+  padding: 16px 156px 60px 156px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sponsors__title {
+  padding-top: 14px;
+}
+
+.sponsors__text {
+  padding: 24px 205px;
+}
+
+.sponsors__button {
+  margin-bottom: 150px;
+}
+
+/**************************************************************************************************/
+.past-events {
+  text-align: center;
+}
+
+.past-events__align_wrapper {
+  text-align: left;
+}
+
+/**************************************************************************************************/
+.rectangles {
+  min-height: 690px;
+  -ms-grid-columns: (1fr)[17];
+      grid-template-columns: repeat(17, 1fr);
+  -ms-grid-rows: (1fr)[17];
+      grid-template-rows: repeat(17, 1fr);
+}
+
+.rectangles__rectangle_blue {
+  grid-column: span 9;
+  grid-row: span 9;
+  background-color: #3d6ed2;
+}
+
+.rectangles__rectangle_green {
+  grid-column: span 8;
+  grid-row: span 9;
+  background-color: #90d23d;
+}
+
+.rectangles__rectangle_orange {
+  grid-column: span 7;
+  grid-row: span 9;
+  background-color: #ff9d00;
+}
+
+.rectangles__rectangle_red {
+  grid-column: span 10;
+  grid-row: span 9;
+  background-color: #e0652a;
 }
 /*# sourceMappingURL=style.css.map */

@@ -26,6 +26,9 @@
     &_align_cntr{
         text-align: center;
     }
+    &_color_white{
+        color: white;
+    }
 }
 
 /**************************************************************************************************/
@@ -67,7 +70,7 @@
     &_border_rds_s{
         border-radius: 5px;
     }
-
+    
     &:hover{
         cursor: pointer;
     }

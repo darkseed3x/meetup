@@ -334,45 +334,127 @@
     
 
 .rewards{ 
-    margin-top: 286px;
+    margin-top: 300px;
     align-items: flex-start;
 
   
   &__elite{
     z-index: 10;
-    margin: -205px 0 0 164px;
+    margin-top: -200px;
   }
-}
-/**************************************************************************************************/
-
-
-.reward-block{
+  &__wrapper{
     margin-left: 20px;
+    margin-top: 24px;
+    margin-bottom: 200px;
     text-align: right;
-    margin-top: 36px;
     width: 665px;
     min-height: 258px;
     color: #fff;
-    margin-bottom: 158px;
+  }
+  &__button{
+      margin-top: 32px;
+  }
+}
+
+/**************************************************************************************************/
+
+.spikers{
+    margin-bottom: 328px;
+    padding: 0 30px;
+
+    &__wrapper{
+        margin-top: 60px;
+        grid-template-columns: repeat(auto-fill, 296px);
+        grid-template-rows: repeat(auto-fill, 296px);
+        grid-gap: 40px;
+    
+        
+    }
 
     &__title{
+        margin-top: 110px;
         margin-bottom: 24px;
     }
-
-    
-    
-    .reward-block__title{
-         
-         font-family: "Roboto-Bold";
-    }
-    .reward-block__btn{
-        font-size: 18px;
-        background-color: $main-green;
-        border-radius: 15px;
-        padding: 15px 22px;
-        margin-top: 25px;
-        color:#fff;
-        border: none;
+    &__text{
+        margin-right: 384px;
     }
 }
-  
+
+/**************************************************************************************************/
+
+.square{
+    background: $main-green;
+    border-radius: 15px;
+    min-height: 296px;
+
+    &_bg_peace{
+        background: url(../sources/peace.png)center no-repeat;
+    }
+    &_bg_curve{
+        background: url(../sources/2.png)center no-repeat;
+    }
+    
+}
+
+/**************************************************************************************************/
+
+.sponsors{
+    margin-bottom: 120px;
+    text-align: center;
+
+    &__wrapper-for-pics{
+        padding: 16px 156px 60px 156px;
+        justify-content: space-around;
+        align-items: center;
+      
+    }
+
+    &__title{
+        padding-top: 14px;
+    }
+    &__text{
+        padding: 24px 205px;
+    }
+    &__button{
+        margin-bottom: 150px;
+    }
+}
+
+/**************************************************************************************************/
+
+.past-events{
+text-align: center;
+
+    &__align_wrapper{
+    text-align: left;
+}
+    
+}
+/**************************************************************************************************/
+.rectangles{
+    min-height: 690px;
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-rows: repeat(17, 1fr);
+
+    &__rectangle_blue{
+        grid-column: span 9;
+        grid-row: span 9;
+        background-color: #3d6ed2;
+    }
+    &__rectangle_green{
+        grid-column: span 8;
+        grid-row: span 9;
+        background-color: #90d23d;
+    }
+    &__rectangle_orange{
+        grid-column: span 7;
+        grid-row: span 9;
+        background-color: #ff9d00;
+    }
+    &__rectangle_red{
+        grid-column: span 10;
+        grid-row: span 9;
+        background-color: #e0652a;
+    }
+    
+}
