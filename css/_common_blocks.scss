@@ -1,0 +1,76 @@
+.title{
+	margin: 0;
+    font-size: 50px;
+    font-family: "Roboto-Black";
+
+    &_color_white{
+        color: #fff;
+    }
+}
+
+/**************************************************************************************************/
+
+.text{
+    font-family: "Roboto-Light";
+    font-size: 14px;
+
+    &_font_medium{
+        font-family: "Roboto-Medium";
+    }
+    &_color_6c{
+        color: #6c6c6c;
+    }
+    &_size_m{
+        font-size: 15px;
+    }
+    &_align_cntr{
+        text-align: center;
+    }
+}
+
+/**************************************************************************************************/
+
+.subtitle{
+    font-family: "Roboto-Black";
+    font-size: 30px;
+    margin: 0;
+
+    &_font_size_l{
+        font-size: 35px;
+    }
+    
+}
+    
+/**************************************************************************************************/
+
+.button{
+    height: 55px;
+    width: 200px;
+    border-radius: 15px;
+    font-family: 'Roboto-Bold'; 
+    border: none;
+    font-size: 22px;
+    background-color: $main-green;
+    color: white;
+    
+
+    &_bgcolor_black{
+        background-color: #373737;
+    }
+    &_text_size_m{
+        font-size: 18px;
+    }
+    &_size_l{
+        height: 58px;
+        width: 367px;
+    }
+    &_border_rds_s{
+        border-radius: 5px;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+
+}
+/**************************************************************************************************/

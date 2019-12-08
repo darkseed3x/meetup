@@ -1,12 +1,28 @@
 @import 'base';
+@import 'common_blocks';
 
 .full-width-block{
 
-    &_bg_gray{
+    &_bg_brown{
         background-color: $top-bg-color;
       }
+    &_bg_gray{
+        background: #4b4d4f;
+    }
+    &_skew_top::before {
+        content: '';
+        display: block;
+        left: 0;
+        position: absolute;
+        right: 0;
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+        background-color:#4b4d4f;
+        z-index: 9;
+        height: 8.625vw;
+        bottom: 100%;
+    }
     
-    &::after {
+    &_skew_bottom::after {
         bottom: 0px;
         content: '';
         display: block;
@@ -82,11 +98,11 @@
    
 
     &__timer{
-        margin:80px auto 352px auto;
+        margin-top:80px;
+        margin-bottom:352px;
     }
     
 }
-
 
 /**************************************************************************************************/
 
@@ -131,8 +147,6 @@
 
     &__img1{
         position: absolute;
-        // top: 138px;
-        // left: 222px;
         z-index: 8;
     }
     &__img2{
@@ -180,38 +194,7 @@
 
 /**************************************************************************************************/
 
-.title{
-	margin: 0;
-    font-size: 50px;
-    font-family: "Roboto-Black";
 
-    &_color_white{
-        color: #fff;
-    }
-}
-
-/**************************************************************************************************/
-
-.text{
-    font-family: "Roboto-Light";
-    font-size: 14px;
-
-    &_font_medium{
-        font-family: "Roboto-Medium";
-    }
-    &_color_6c{
-        color: #6c6c6c;
-    }
-    &_size_m{
-        font-size: 15px;
-    }
-    &_align_cntr{
-        text-align: center;
-    }
-}
-
-/**************************************************************************************************/
-   
 .form{
     z-index: 10;
     margin-top: -274px;
@@ -256,34 +239,7 @@
 }
 
 /**************************************************************************************************/
-
-.button{
-    border-radius: 5px;
-    font-family: 'Roboto-Bold'; 
-    border: none;
-    
-
-    &_bgcolor_green{
-        background-color: $main-green;
-    }
-    &_text_size_m{
-        font-size: 22px;
-    }
-    &_color_white{
-        color: white;
-    }
-    &_size_l{
-        height: 55px;
-        width: 367px;
-    }
-
-    &:hover{
-        cursor: pointer;
-    }
-
-}
-/**************************************************************************************************/
-    
+  
 .blogs{
         margin-top: 140px;
         justify-content: space-between;
@@ -311,17 +267,6 @@
 
 /**************************************************************************************************/
 
-.subtitle{
-    font-family: "Roboto-Black";
-    font-size: 30px;
-
-    &_font_size_l{
-        font-size: 35px;
-    }
-    
-}
-    
-/**************************************************************************************************/
 
 .table-events{
     margin-top: 66px;
@@ -334,14 +279,41 @@
     width: 100%;
     margin: 0 auto;
     color: #fff;
-        
+
+    &__text{
+        margin-top: 40px;
+    }
+}       
 /**************************************************************************************************/
-    
+
+.cell__header,   
 .cell{
     min-height: 75px;
     justify-content: start;
     align-items: center;
     font-size: 22px;
+
+    &__header{
+        border-radius: 15px 15px 0 0;
+        background-color: $main-green;
+        font-size: 30px;
+        font-family: "Roboto-Black";
+    }
+
+    &__time{
+        padding-left: 48px;
+        flex-shrink: 0;
+    }
+    &__event{
+        padding-right: 48px;
+        padding-left: 124px;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+    &__plus{
+        flex-shrink: 0;
+        padding-right: 48px;
+    }
 
     &__subtitle{
         padding-left: 80px;
@@ -353,99 +325,42 @@
     &_bfcolor_even{
         background-color: #4b4d4f;
     }
-}
-    .table__cell:last-child{
+    &_last{
         border-radius: 0 0 15px 15px;
-    }
-    .table__cell--title{
-        border-radius: 15px 15px 0 0;
-        background-color: $main-green;
-        font-size: 30px;
-        font-family: "Roboto-Black";
-    }
-    .table__time{
-        padding-left: 48px;
-        flex-shrink: 0;
-    }
-    .table__event{
-        padding-right: 48px;
-        padding-left: 124px;
-        justify-content: space-between;
-        flex-grow: 1;
-    }
-    .table__plus{
-        flex-shrink: 0;
-        padding-right: 48px;
-    }
-    .table__title-time{
-        
-    }
-    .table__title-events{
-        
-    }
+    }  
 }
-    /**************************************************************************************************/
+
+ /**************************************************************************************************/
     
 
-.skew-rewards{
-    
+.rewards{ 
     margin-top: 286px;
-    background: #4b4d4f;
-    position: relative;
-    z-index: -4;
-    min-height: 580px;
+    align-items: flex-start;
 
-    .container{
-        align-items: flex-start;
+  
+  &__elite{
+    z-index: 10;
+    margin: -205px 0 0 164px;
+  }
+}
+/**************************************************************************************************/
+
+
+.reward-block{
+    margin-left: 20px;
+    text-align: right;
+    margin-top: 36px;
+    width: 665px;
+    min-height: 258px;
+    color: #fff;
+    margin-bottom: 158px;
+
+    &__title{
+        margin-bottom: 24px;
     }
 
-    &::before {
-
-        content: '';
-        display: block;
-        left: 0;
-        position: absolute;
-        right: 0;
-        clip-path: polygon(100% 0, 0 100%, 100% 100%);
-        background-color:
-        #4b4d4f;
-        z-index: -5;
-        height: 8.625vw;
-        bottom: 100%;
-      }
-      &::after {
-        bottom: 0px;
-        content: '';
-        display: block;
-        left: 0;
-        position: absolute;
-        right: 0;
-        clip-path: polygon(100% 0, 0 100%, 100% 100%);
-        background-color: white;
-        z-index: -5;
-        height: 8.625vw;
-      }
-      .elite{
-        margin: -205px 0 0 164px;
-      }
-      .reward-block{
-            margin-left: 20px;
-            text-align: right;
-            margin-top: 36px;
-            width: 665px;
-            min-height: 258px;
-            color: #fff;
-            margin-bottom: 158px;
-        
-            &__title{
-                margin-bottom: 24px;
-            }
-
-    }
-    .reward-block__text{
-        font-family: 'Roboto-light';
-        font-size: 14px;
-    }
+    
+    
     .reward-block__title{
          
          font-family: "Roboto-Bold";

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="full-width-block full-width-block_bg_gray relative">
+    <div class="full-width-block full-width-block_bg_brown full-width-block_skew_bottom relative">
         <header class="header container">
             <div class="top-menu flex-container">
                 <a href="" class="logo flex-container">
@@ -92,13 +92,13 @@
         </div>
 
         <form action="" class="form form_bgcolor_white column-container">
-            <h3 class="form__title">Sign up for our event</h3>
+            <h4 class="form__title">Sign up for our event</h4>
             <input type="text" class="form__name" placeholder="Enter your name">
             <input type="text" class="form__email" placeholder="Enter your email">
             <input type="text" class="form__phone-number" placeholder="Phone number">
             <input type="text" class="form__login" placeholder="Envato Username">
             <button
-                class="button form__button button_bgcolor_green button_text_size_m button_color_white button_size_l">Let
+                class="button form__button button_size_l button_border_rds_s">Let
                 me in!</button>
             <div class="text form__text text_color_6c text_size_m">Hurry up, Limited seats availble<br>
                 *we will never spam your email</div>
@@ -109,7 +109,7 @@
 
         <div class="blog column-container">
             <img class="blog__img" src="./sources/community.svg" alt="">
-            <h4 class="subtitle blog__subtitle subtitle_font_size_l">Community</h4>
+            <h3 class="subtitle blog__subtitle subtitle_font_size_l">Community</h3>
             <p class="text text_align_cntr">Meet the Community you’ve always talked with, in real life! This meetup will
                 be all about authors
                 engaging each other with interesting coversation
@@ -118,7 +118,7 @@
 
         <div class="blog column-container">
             <img class="blog__img" src="./sources/tolk_shop.svg" alt="">
-            <h4 class="subtitle blog__subtitle subtitle_font_size_l">Talk Shop</h4>
+            <h3 class="subtitle blog__subtitle subtitle_font_size_l">Talk Shop</h3>
             <p class="text blog__text text_align_cntr">In this meetup you will get to know the marketplaces better,
                 because that’s
                 why were all here for
@@ -127,7 +127,7 @@
 
         <div class="blog column-container">
             <img class="blog__img" src="./sources/war_stories.svg" alt="">
-            <h4 class="subtitle blog__subtitle subtitle_font_size_l">War Stories</h4>
+            <h3 class="subtitle blog__subtitle subtitle_font_size_l">War Stories</h3>
             <p class="text text_align_cntr">Gather round fellow authors!
                 Hear the stories of success from your favorite authors and learn how they we able to tackle their
                 problems and become successful.</p>
@@ -138,29 +138,29 @@
 
     <section class="table-events container">
         <div class="table column-container">
-            <div class="cell table__cell--title flex-container">
-                <span class="subtitle cell__subtitle">Time</span>
-                <span class="subtitle">Stuff that will happen</span>
+            <div class="cell__header flex-container">
+                <h3 class="subtitle cell__subtitle">Time</h3>
+                <h3 class="subtitle">Stuff that will happen</h3>
             </div>
             <div class="cell cell_bfcolor_odd flex-container">
-                <span class="table__time">10am - 12pm</span>
-                <span class="table__event">Introduction and presentations about Envato</span>
-                <img src="./sources/More_icon.svg" alt="" class="table__plus">
+                <span class="cell__time">10am - 12pm</span>
+                <span class="cell__event">Introduction and presentations about Envato</span>
+                <img src="./sources/More_icon.svg" alt="" class="cell__plus">
             </div>
             <div class="cell cell_bfcolor_even flex-container">
-                <span class="table__time">12pm - 02pm</span>
-                <span class="table__event">Sessions by honorable guests and Speakers</span>
-                <img src="./sources/More_icon.svg" alt="" class="table__plus">
+                <span class="cell__time">12pm - 02pm</span>
+                <span class="cell__event">Sessions by honorable guests and Speakers</span>
+                <img src="./sources/More_icon.svg" alt="" class="cell__plus">
             </div>
             <div class="cell cell_bfcolor_odd flex-container">
-                <span class="table__time">02pm - 03pm</span>
-                <span class="table__event">Break and Mingle time with the authors</span>
-                <img src="./sources/More_icon.svg" alt="" class="table__plus">
+                <span class="cell__time">02pm - 03pm</span>
+                <span class="cell__event">Break and Mingle time with the authors</span>
+                <img src="./sources/More_icon.svg" alt="" class="cell__plus">
             </div>
-            <div class="cell cell_bfcolor_even flex-container">
-                <span class="table__time">03pm - 05pm</span>
-                <span class="table__event">Portfolio Review, Rewards and Ending Presentation</span>
-                <img src="./sources/More_icon.svg" alt="" class="table__plus">
+            <div class="cell cell_bfcolor_even cell_last flex-container">
+                <span class="cell__time">03pm - 05pm</span>
+                <span class="cell__event">Portfolio Review, Rewards and Ending Presentation</span>
+                <img src="./sources/More_icon.svg" alt="" class="cell__plus">
             </div>
         </div>
 
@@ -175,12 +175,12 @@
 
     </section>
 
-    <section class="skew-rewards flex-container">
-        <div class="container flex-container">
-            <img src="./sources/Elite_Badge.png" alt="" class="elite">
+    <div class="full-width-block full-width-block_skew_top full-width-block_bg_gray full-width-block_skew_bottom relative">
+        <section class="rewards container flex-container">
+            <img src="./sources/Elite_Badge.png" alt="" class="rewards__elite">
             <div class="reward-block">
                 <h2 class="title reward-block__title title_color_white">We reward the Elites!</h2>
-                <div class="reward-block__text">
+                <div class="text">
                     <p>Are you an Elite author in the Envato Marketplaces? If so we are proud of you! We want to
                         give
                         our thanks in achieving great success in the marketplace and we want to make known to the
@@ -197,11 +197,12 @@
                         claim
                         your prizes.</p>
                 </div>
-                <button class="reward-block__btn">Bring on the swag!</button>
+                <button class="button button_text_size_m">Bring on the swag!</button>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
+    
 </body>
 
 </html>
