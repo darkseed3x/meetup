@@ -103,6 +103,22 @@ body {
   color: #fff;
 }
 
+.title_font_size_m {
+  font-size: 35px;
+}
+
+.title_font_size_l {
+  font-size: 45px;
+}
+
+.title_font_size_s {
+  font-size: 30px;
+}
+
+.title_linehgt_s {
+  line-height: 1;
+}
+
 /**************************************************************************************************/
 .text {
   font-family: "Roboto-Light";
@@ -131,25 +147,6 @@ body {
 
 .text_color_white {
   color: white;
-}
-
-/**************************************************************************************************/
-.subtitle {
-  font-family: "Roboto-Black";
-  font-size: 30px;
-  margin: 0;
-}
-
-.subtitle_font_size_l {
-  font-size: 35px;
-}
-
-.subtitle_font_size_xl {
-  font-size: 45px;
-}
-
-.subtitle_linehgt_s {
-  line-height: 1;
 }
 
 /**************************************************************************************************/
@@ -470,7 +467,7 @@ body {
   min-height: 211px;
 }
 
-.blog__subtitle {
+.blog__title {
   margin-top: 34px;
   margin-bottom: 4px;
 }
@@ -548,8 +545,8 @@ body {
   padding-right: 48px;
 }
 
-.cell__header__subtitle,
-.cell__subtitle {
+.cell__header__title,
+.cell__title {
   padding-left: 80px;
   padding-Right: 150px;
 }

@@ -6,6 +6,18 @@
     &_color_white{
         color: #fff;
     }
+    &_font_size_m{
+        font-size: 35px;
+    }
+    &_font_size_l{
+        font-size: 45px;
+    }
+    &_font_size_s{
+        font-size: 30px;
+    }
+    &_linehgt_s{
+        line-height: 1;
+    }
 }
 
 /**************************************************************************************************/
@@ -33,26 +45,7 @@
         color: white;
     }
 }
-
-/**************************************************************************************************/
-
-.subtitle{
-    font-family: "Roboto-Black";
-    font-size: 30px;
-    margin: 0;
-
-    &_font_size_l{
-        font-size: 35px;
-    }
-    &_font_size_xl{
-        font-size: 45px;
-    }
-    &_linehgt_s{
-        line-height: 1;
-    }
-    
-}
-    
+ 
 /**************************************************************************************************/
 
 .button{
