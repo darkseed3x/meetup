@@ -144,6 +144,14 @@ body {
   font-size: 35px;
 }
 
+.subtitle_font_size_xl {
+  font-size: 45px;
+}
+
+.subtitle_linehgt_s {
+  line-height: 1;
+}
+
 /**************************************************************************************************/
 .button {
   height: 56px;
@@ -614,6 +622,7 @@ body {
 
 /**************************************************************************************************/
 .square {
+  color: #fff;
   background: #90d23d;
   border-radius: 15px;
   min-height: 296px;
@@ -625,6 +634,20 @@ body {
 
 .square_bg_curve {
   background: url(../sources/2.png) center no-repeat;
+}
+
+.square__wrapper {
+  padding: 20px 35px 0 35px;
+}
+
+.square__line {
+  width: 85px;
+  margin: 15px 0;
+  border-bottom: 6px solid #fff;
+}
+
+.square__text {
+  padding-bottom: 50px;
 }
 
 /**************************************************************************************************/

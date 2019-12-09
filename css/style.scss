@@ -374,6 +374,7 @@
 /**************************************************************************************************/
 
 .square{
+    color: #fff;
     background: $main-green;
     border-radius: 15px;
     min-height: 296px;
@@ -384,7 +385,17 @@
     &_bg_curve{
         background: url(../sources/2.png)center no-repeat;
     }
-    
+    &__wrapper{
+        padding: 20px 35px 0 35px;
+    }
+    &__line{
+        width: 85px;
+        margin: 15px 0;
+        border-bottom: 6px solid #fff;
+    }
+    &__text{
+        padding-bottom: 50px;
+    }
 }
 
 /**************************************************************************************************/
