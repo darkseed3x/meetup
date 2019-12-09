@@ -50,7 +50,7 @@
 /**************************************************************************************************/
 
 .button{
-    height: 55px;
+    height: 56px;
     width: 200px;
     border-radius: 15px;
     font-family: 'Roboto-Bold'; 
@@ -69,6 +69,9 @@
     &_size_l{
         height: 58px;
         width: 367px;
+    } 
+    &_size_xl{
+        width: 400px;
     }
     &_border_rds_s{
         border-radius: 5px;
@@ -80,3 +83,17 @@
 
 }
 /**************************************************************************************************/
+
+.text-field{
+    padding: 16px 14px;
+    font-size: 19px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid $main-green;
+    font-family: 'Roboto-Light';
+
+    &_fixed_size{
+        width: 370px;
+    }
+    
+}

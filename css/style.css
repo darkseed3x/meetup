@@ -146,7 +146,7 @@ body {
 
 /**************************************************************************************************/
 .button {
-  height: 55px;
+  height: 56px;
   width: 200px;
   border-radius: 15px;
   font-family: 'Roboto-Bold';
@@ -169,6 +169,10 @@ body {
   width: 367px;
 }
 
+.button_size_xl {
+  width: 400px;
+}
+
 .button_border_rds_s {
   border-radius: 5px;
 }
@@ -178,6 +182,19 @@ body {
 }
 
 /**************************************************************************************************/
+.text-field {
+  padding: 16px 14px;
+  font-size: 19px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #90d23d;
+  font-family: 'Roboto-Light';
+}
+
+.text-field_fixed_size {
+  width: 370px;
+}
+
 .full-width-block_bg_brown {
   background-color: #564f4f;
 }
@@ -402,15 +419,6 @@ body {
       flex-shrink: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.form__name, .form__email, .form__phone-number, .form__login {
-  padding: 16px 14px;
-  font-size: 19px;
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid #90d23d;
-  font-family: 'Roboto-Light';
 }
 
 .form__title {
@@ -665,7 +673,7 @@ body {
 
 /**************************************************************************************************/
 .rectangles {
-  min-height: 784px;
+  min-height: 690px;
   -ms-grid-columns: (1fr)[17];
       grid-template-columns: repeat(17, 1fr);
   -ms-grid-rows: (1fr)[17];
@@ -695,6 +703,47 @@ body {
   grid-column: span 10;
   grid-row: span 9;
   background-color: #e0652a;
+}
+
+/**************************************************************************************************/
+/**************************************************************************************************/
+.modal {
+  background-color: #eee;
+  text-align: center;
+}
+
+.modal__wrapper {
+  margin: 0 115px;
+}
+
+.modal__form {
+  margin: 60px 70px 50px 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__textarea {
+  border: 1px solid #bebebe;
+  width: 370px;
+  min-height: 250px;
+  padding: 16px 14px;
+  resize: none;
+  font-size: 19px;
+  font-family: 'Roboto-Light';
+}
+
+.modal__img {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.modal__button {
+  margin-top: 30px;
+  margin-bottom: 120px;
 }
 
 /**************************************************************************************************/
