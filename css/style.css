@@ -222,7 +222,7 @@ body {
           clip-path: polygon(100% 0, 0 100%, 100% 100%);
   background-color: #4b4d4f;
   z-index: 9;
-  height: 8.625vw;
+  height: 8.62vw;
   bottom: 100%;
 }
 
@@ -237,7 +237,7 @@ body {
           clip-path: polygon(100% 0, 0 100%, 100% 100%);
   background-color: white;
   z-index: 9;
-  height: 8.625vw;
+  height: 8.62vw;
 }
 
 /**************************************************************************************************/
@@ -302,107 +302,49 @@ body {
 }
 
 /**************************************************************************************************/
-.timer-section__timer {
-  margin-top: 80px;
-  margin-bottom: 352px;
-}
-
-/**************************************************************************************************/
 .timer {
-  height: 196px;
-  padding: 0 80px;
+  padding: 0px 70px;
   border-radius: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "RobotoSlab-Thin";
-  text-transform: uppercase;
+  border: 2px solid #90d23d;
   color: #ffffff;
-  font-size: 130px;
+  margin: 76px 30px 0 30px;
 }
 
 .timer__wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 130px;
+  line-height: 1.2;
+  font-family: "RobotoSlab-Thin";
 }
 
-.timer__span {
-  font-family: "RobotoSlab";
-  margin-bottom: 46px;
-  line-height: 10px;
-  font-size: 25px;
-}
-
-.timer__colon {
-  -ms-flex-item-align: baseline;
-      align-self: baseline;
-  line-height: 132px;
-}
-
-.timer_border_green {
-  border: 2px solid #90d23d;
-}
-
-/**************************************************************************************************/
-.skew-img {
-  position: absolute;
-  left: 386px;
-  bottom: 188px;
-}
-
-.skew-img__img1 {
-  position: absolute;
-  z-index: 8;
-}
-
-.skew-img__img2 {
-  position: absolute;
-  top: -11px;
-  left: 134px;
-  z-index: 7;
-}
-
-.skew-img__img3 {
-  position: absolute;
-  top: -26px;
-  left: 258px;
-  z-index: 6;
-}
-
-.skew-img__img4 {
-  position: absolute;
-  top: -36px;
-  left: 394px;
-  z-index: 5;
-}
-
-.skew-img__img5 {
-  position: absolute;
-  top: -46px;
-  left: 526px;
-  z-index: 4;
-}
-
-/**************************************************************************************************/
-.main {
-  margin-top: 38px;
-  margin-bottom: 132px;
+.timer__descript-wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-family: "RobotoSlab";
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.timer__days-span {
+  padding-left: 30px;
+}
+
+.timer__hours-span {
+  padding-left: 50px;
+}
+
+.timer__minutes-span {
+  padding-left: 20px;
 }
 
 /**************************************************************************************************/
-.article {
-  margin-right: 72px;
-}
-
-.article_color_primary {
-  color: #242424;
+.spacer {
+  padding-bottom: 387px;
 }
 
 /**************************************************************************************************/
@@ -725,7 +667,6 @@ body {
   background-color: #e0652a;
 }
 
-/**************************************************************************************************/
 /**************************************************************************************************/
 .modal {
   background-color: #eee;

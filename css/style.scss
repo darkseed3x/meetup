@@ -21,7 +21,7 @@
         clip-path: polygon(100% 0, 0 100%, 100% 100%);
         background-color:#4b4d4f;
         z-index: 9;
-        height: 8.625vw;
+        height: 8.62vw;
         bottom: 100%;
     }
     
@@ -35,7 +35,7 @@
         clip-path: polygon(100% 0, 0 100%, 100% 100%);
         background-color: white;
         z-index: 9;
-        height: 8.625vw;
+        height: 8.62vw;
       }
 }
 
@@ -96,125 +96,45 @@
 }
 
 /**************************************************************************************************/
-// .timer{
-//     padding: 0 80px;
-//     border-radius: 20px;  
-//     font-family: "RobotoSlab-Thin"; 
-//     border: 2px solid $main-green;
-//     color: #ffffff; 
-       
-    
-//     &__wrapper{
-//         align-items: center;
-//         font-size: 130px;
-//     }
-//     &__descript-wrapper{
-//         text-transform: uppercase;
-//         font-family: "RobotoSlab";   
-//     }
-    
-// }
-
-.timer-section{
-   
-
-    &__timer{
-        margin-top:80px;
-        margin-bottom:352px;
-    }
-    
-}
-
-/**************************************************************************************************/
-
 .timer{
-    height: 196px;
-    padding: 0 80px;
+    padding: 0px 70px;
     border-radius: 20px;  
-    justify-content: center;
-    align-items: center;
-    font-family: "RobotoSlab-Thin"; 
-    text-transform: uppercase;
+    border: 2px solid $main-green;
     color: #ffffff; 
-    font-size: 130px;   
+    margin: 76px 30px 0 30px;
     
     &__wrapper{
         align-items: center;
+        font-size: 130px;
+        line-height: 1.2;
+        font-family: "RobotoSlab-Thin"; 
     }
-
-    &__span{
-        font-family: "RobotoSlab";    
-        margin-bottom: 46px;
-        line-height: 10px;
+    &__descript-wrapper{
+        justify-content: space-between;
+        padding: 0 10px;
+        text-transform: uppercase;
+        font-family: "RobotoSlab";   
         font-size: 25px;
+        padding-bottom:10px ;
     }
-
-    &__colon{
-        align-self: baseline;
-        line-height: 132px;
-    } 
-
-    &_border_green{
-        border: 2px solid $main-green;
+    &__days-span{
+        padding-left: 30px;
     }
-
-}
-/**************************************************************************************************/
-
-.skew-img{
-    position: absolute;
-    left: 386px;
-    bottom: 188px;
-
-    &__img1{
-        position: absolute;
-        z-index: 8;
+    &__hours-span{
+        padding-left: 50px;
     }
-    &__img2{
-        position: absolute;
-        top: -11px;
-        left: 134px;
-        z-index: 7;
+    &__minutes-span{
+        padding-left: 20px;
     }
-    &__img3{
-        position: absolute;
-        top: -26px;
-        left: 258px;
-        z-index: 6;
-    }
-    &__img4{
-        position: absolute;
-        top: -36px;
-        left: 394px;
-        z-index: 5;
-    }
-    &__img5{
-        position: absolute;
-        top: -46px;
-        left: 526px;
-        z-index: 4;
-    }
-}
-/**************************************************************************************************/
-
-.main{
-    margin-top: 38px;
-    margin-bottom: 132px;
-    justify-content: space-between;
-}
-
-/**************************************************************************************************/
-
- .article{
-    margin-right: 72px;
     
-    &_color_primary{
-        color: $text-primary-color;
-    }
+}
+   
+/**************************************************************************************************/
+.spacer{
+    padding-bottom: 387px;
 }
 
 /**************************************************************************************************/
-
 
 .form{
     z-index: 10;
@@ -484,10 +404,6 @@ margin-bottom: 60px;
         grid-row: span 9;
         background-color: #e0652a;
     }
-    
-}
-/**************************************************************************************************/
-.map{
     
 }
 
